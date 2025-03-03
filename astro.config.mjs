@@ -4,6 +4,7 @@ import react from "@astrojs/react";
 
 export default defineConfig({
   site: 'https://renderart.github.io',
+  base: '/renderart/',
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],

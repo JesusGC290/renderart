@@ -36,25 +36,25 @@ export function Header() {
       <header className="shadow py-4">
         <nav className="max-w-7xl mx-auto flex justify-between items-center px-4 lg:px-0">
           {/* Logo */}
-          <a href="/" className="text-2xl font-bold">
+          <a href="/renderart/" className="text-2xl font-bold">
             <img src={renderLogo.src} width="40" alt="Renderart Homepage" />
           </a>
 
           {/* Menú de navegación en escritorio */}
           <div className="hidden shrink flex-row items-center gap-12 lg:flex text-base">
-            <a href="/" className="hover:text-[#D99923] font-semibold">
+            <a href="/renderart/" className="hover:text-[#D99923] font-semibold">
               HOME
             </a>
 
-            <a href="/portfolio" className="hover:text-[#D99923] font-semibold">
+            <a href="/renderart/portfolio" className="hover:text-[#D99923] font-semibold">
               PORTFOLIO
             </a>
 
-            <a href="/about" className="hover:text-[#D99923] font-semibold">
+            <a href="/renderart/about" className="hover:text-[#D99923] font-semibold">
               ABOUT
             </a>
 
-            <a href="/contact" className="hover:text-[#D99923] font-semibold">
+            <a href="/renderart/contact" className="hover:text-[#D99923] font-semibold">
               CONTACT
             </a>
           </div>
@@ -88,19 +88,19 @@ export function Header() {
         >
           {isMenuOpen && (
             <nav className="text-xl flex flex-col divide-y divide-gray-500 pb-12 text-left [&>*]:p-6">
-              <a href="/" className="hover:text-[#D99923] font-semibold">
+              <a href="/renderart/" className="hover:text-[#D99923] font-semibold">
                 HOME
               </a>
 
-              <a href="/portfolio" className="hover:text-[#D99923] font-semibold">
+              <a href="/renderart/portfolio" className="hover:text-[#D99923] font-semibold">
                 PORTFOLIO
               </a>
 
-              <a href="/about" className="hover:text-[#D99923] font-semibold">
+              <a href="/renderart/about" className="hover:text-[#D99923] font-semibold">
                 ABOUT
               </a>
 
-              <a href="/contact" className="hover:text-[#D99923] font-semibold">
+              <a href="/renderart/contact" className="hover:text-[#D99923] font-semibold">
                 CONTACT
               </a>
               <div className="flex flex-wrap justify-between gap-12 gap-y-6">
@@ -116,7 +116,7 @@ export function Header() {
                   </a>
                 </div>
 
-                <a href="/portfolio" className="px-8 py-3 bg-[#F2BE22] text-black rounded-full hover:bg-[#D99923] transition-colors flex-grow sm:max-w-sm text-center">
+                <a href="/renderart/portfolio" className="px-8 py-3 bg-[#F2BE22] text-black rounded-full hover:bg-[#D99923] transition-colors flex-grow sm:max-w-sm text-center">
                   View More
                 </a>
               </div>
