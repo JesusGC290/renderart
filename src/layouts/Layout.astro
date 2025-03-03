@@ -3,6 +3,7 @@ import { Header } from 'src/components/header';
 import '../styles/global.css';
 import { Facebook, Instagram, Twitter } from 'lucide-astro';
 import renderLogo from '../assets/r-logo.png';
+import favicon from '../assets/favicon.svg';
 ---
 
 <!doctype html>
@@ -10,7 +11,7 @@ import renderLogo from '../assets/r-logo.png';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${favicon.src}`} />
     <meta name="generator" content={Astro.generator} />
     <title>Render Art</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />

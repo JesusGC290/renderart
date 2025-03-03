@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import imgStories from '../assets/img-08.png';
+import icon3ds from '../assets/icon-3ds.svg';
+import iconAi from '../assets/icon-ai.svg';
+import iconPs from '../assets/icon-ps.svg';
 ---
 
 <Layout>
@@ -8,17 +12,17 @@ import Layout from '../layouts/Layout.astro';
       <p class="text-5xl lg:text-6xl font-thin">Telling stories throught <span class="font-semibold text-[#F2BE22]">pictures</span></p>
     </div>
     <div class="col-span-2">
-      <img src="/img-08.png" alt="Render 3D" class="shadow-lg" />
+      <img src={`${imgStories.src}`} alt="Render 3D" class="shadow-lg" />
     </div>
   </section>
   <section class="bg-gray-100 py-8">
     <div class="flex justify-center gap-8 lg:gap-30 items-center flex-wrap">
-      <img src="/icon-3ds.svg" alt="Render 3D" class="grayscale max-w-[50px]" />
-      <img src="/icon-ps.svg" alt="Render 3D" class="grayscale max-w-[50px]" />
-      <img src="/icon-ai.svg" alt="Render 3D" class="grayscale max-w-[50px]" />
-      <img src="/icon-3ds.svg" alt="Render 3D" class="grayscale max-w-[50px] hidden lg:block" />
-      <img src="/icon-ps.svg" alt="Render 3D" class="grayscale max-w-[50px] hidden lg:block" />
-      <img src="/icon-ai.svg" alt="Render 3D" class="grayscale max-w-[50px] hidden lg:block" />
+      <img src={`${icon3ds.src}`} alt="Render 3D" class="grayscale max-w-[50px]" />
+      <img src={`${iconAi.src}`} alt="Render 3D" class="grayscale max-w-[50px]" />
+      <img src={`${iconPs.src}`} alt="Render 3D" class="grayscale max-w-[50px]" />
+      <img src={`${icon3ds.src}`} alt="Render 3D" class="grayscale max-w-[50px] hidden lg:block" />
+      <img src={`${iconAi.src}`} alt="Render 3D" class="grayscale max-w-[50px] hidden lg:block" />
+      <img src={`${iconPs.src}`} alt="Render 3D" class="grayscale max-w-[50px] hidden lg:block" />
     </div>
   </section>
   <section class="">
