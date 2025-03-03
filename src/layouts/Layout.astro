@@ -1,22 +1,56 @@
+---
+import { Header } from 'src/components/header';
+import '../styles/global.css';
+import { Facebook, Instagram, Twitter } from 'lucide-astro';
+import renderLogo from '../assets/r-logo.png';
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Render Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header global -->
+    <Header client:only />
+    <main>
+      <slot />
+    </main>
+    <!-- Footer global -->
+    <footer class="bg-white py-4 mt-10">
+      <div class="max-w-7xl mx-auto flex justify-between items-center py-14 px-6 md:px-10">
+        <div class="flex flex-col md:flex-row items-start md:items-end space-x-6">
+          <img src=`${renderLogo.src}` alt="Mi Logo" class="h-10" />
+          <p>&copy; 2025 Renderart. <br /> All right reserved.</p>
+        </div>
+        <div class="flex flex-col-reverse md:flex-row justify-center gap-4 md:gap-6">
+          <a href="/privacy" class="">Privacy policy</a>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com" class="hover:text-blue-500" target="_blank"><Facebook size={20} /></a>
+            <a href="https://instagram.com" class="hover:text-pink-500" target="_blank"><Instagram size={20} /></a>
+            <a href="https://twitter.com" class="hover:text-blue-400" target="_blank"><Twitter size={20} /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>

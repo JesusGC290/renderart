@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ParallaxScrollPortfolio } from '../components/parallax-scroll-portfolio';
+---
+
+<Layout>
+  <!-- Contenedor con scroll snap -->
+  <div class="snap-y snap-mandatory overflow-y-scroll">
+    <!-- Imagen de fondo a pantalla completa -->
+    <!-- <section class="snap-start relative h-screen bg-cover bg-center bg-[url(/img-01.webp)]">
+      <div class="absolute inset-0"></div>
+    </section> -->
+
+    <!-- Galería de Proyecto con Parallax -->
+    <section class="py-18 snap-start">
+      <ParallaxScrollPortfolio client:load />
+    </section>
+  </div>
+</Layout>

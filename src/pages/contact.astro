@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Facebook, Instagram, Twitter } from 'lucide-astro';
+import render_01 from '../assets/render_12.jpg';
+---
+
+<Layout>
+  <section class="h-screen">
+    <div class="grid grid-cols-3 h-full items-center">
+      <div class="h-full">
+        <img src=`${render_01.src}` class="h-full" alt="" />
+      </div>
+      <div class="col-span-2 py-16 px-4 md:px-8 lg:px-16">
+        <h2 class="text-5xl text-gray-700 mb-4">contact</h2>
+        <p class="text-gray-600 font-light lg:w-1/2">
+          I am always looking forward to new challenging projects. Please email me if you want to work together or ask anything. You can also find me on my social networks.
+        </p>
+        <div class="mt-12">
+          <p class="font-semibold text-gray-600 mb-4">email</p>
+          <a href="mailto:renderart@gmail.com" class="font-light text-gray-600 underline">renderart@gmail.com</a>
+        </div>
+        <div class="mt-12">
+          <p class="font-semibold text-gray-600 mb-4">social</p>
+          <div class="flex space-x-3">
+            <a href="https://facebook.com" class="hover:text-blue-500" target="_blank"><Facebook size={20} /></a>
+            <a href="https://instagram.com" class="hover:text-pink-500" target="_blank"><Instagram size={20} /></a>
+            <a href="https://twitter.com" class="hover:text-blue-400" target="_blank"><Twitter size={20} /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
